@@ -1,26 +1,3 @@
-function sendMail(){
-    var params ={
-        name :document.getElementById("name").value ,
-        email :document.getElementById("email").value ,
-        Messagge :document.getElementById("Message").value ,
-    };
-const serviceID ="service_z0xpdz1";
-const templateID="template_j6nl0ft";
-
-emailjs.send(serviceID,templateID,params)
-.then(
-    res =>{
-        document.getElementById("name").value="";
-document.getElementById("email").value="";
-document.getElementById("Message").value="";\
-console.log(res);
-        alert("Message success")
-    }
-    )
-.catch((err) => console.log(err));
-}
-
-
         
 // active hamburger menu 
 let menuIcon = document.querySelector(".menu-icon");
