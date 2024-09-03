@@ -308,15 +308,15 @@
                 </div>
                 <form action="#">
                     <div class="input-box">
-                        <input type="text" placeholder="First Name">
-                        <input type="text" placeholder="Last Name">
+                        <input type="text" id="name" placeholder="First Name">
+                        <input type="text" id="name" placeholder="Last Name">
                     </div>
-                    <input type="email" placeholder="Email">
-                    <input type="text" placeholder="Subject">
-                    <textarea name="#" id="" cols="30" rows="10">
+                    <input type="email" id="email" placeholder="Email">
+                    <input type="text" id="Message" placeholder="Subject">
+                    <textarea id="Message" cols="30" rows="10">
                     </textarea>
                     <div class="formBtn">
-                        <button type="submit" class="btn">Send Message</button>
+                        <button type="submit" class="btn" onclick="sendMail()">Send Message</button>
                     </div>
                 </form>
             </div>
